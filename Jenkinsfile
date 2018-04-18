@@ -56,7 +56,7 @@ pipeline {
             //sh 'mvn clean deploy'
             sh 'mvn clean package'
 
-            sh 'export VERSION=`cat VERSION` && skaffold run -f skaffold.yaml'
+            //sh 'export VERSION=`cat VERSION` && skaffold run -f skaffold.yaml'
           }
         }
       }
